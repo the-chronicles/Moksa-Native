@@ -1,5 +1,5 @@
-import { View, StyleSheet } from "react-native";
-import { DrawerContentScrollView, DrawerItem } from "@react-navigation/drawer";
+import {View, StyleSheet} from 'react-native';
+import {DrawerContentScrollView, DrawerItem} from '@react-navigation/drawer';
 import {
   Avatar,
   Title,
@@ -9,10 +9,10 @@ import {
   Text,
   TouchableRipple,
   Switch,
-} from "react-native-paper";
-import Colors from "../../constants/colors";
-import PrimaryButton from "./Buttons/PrimaryButton";
-import IconButton from "./Buttons/IconButton";
+} from 'react-native-paper';
+import Colors from '../../constants/colors';
+import PrimaryButton from './Buttons/PrimaryButton';
+import IconButton from './Buttons/IconButton';
 
 function DrawerContent() {
   return (
@@ -38,7 +38,7 @@ function DrawerContent() {
         <DrawerItem
           label="Log Out"
           onPress={() => {}}
-          icon={({ color, size }) => {
+          icon={({color, size}) => {
             <IconButton icon="log-out-outline" color={color} size={size} />;
           }}
         />
